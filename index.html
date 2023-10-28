@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bootstrap cdn -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Tooltips  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap Icon  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- Font Family -->
+
+  <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+
+  <!-- Titel Icon  -->
+
+  <link rel="icon" href="image/LOGO-GIF.gif">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <title>Sunder Deep Group of Institution</title>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+  <style>
+    .apply {
+      height: 35vh;
+      width: 100%;
+      padding: 40px 0px 0px 0px;
+      color: #1abc9c;
+      box-shadow: 0 0 10px black;
+      transition: .3s;
+    }
+
+    .apply:hover {
+      background-color: #000000;
+    }
+
+    .apply i {
+      color: #1abc9c;
+      font-size: 50px;
+      border: 8px solid #1abc9c;
+      padding: 7px 20px;
+      border-radius: 100px;
+    }
+
+    .mid_bar {
+      height: 40px;
+      width: 60px;
+      background-color: #1abc9c;
+      margin: -20px 0px 0px 100px;
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    .top_bar {
+      height: 20px;
+      width: 100px;
+      background-color: #16a085;
+      margin: -60px 0px 0px 80px;
+      border-radius: 20px 20px 0px 0px;
+    }
+
+    .apply1 {
+      height: 35vh;
+      width: 100%;
+      padding: 40px 0px 0px 0px;
+      color: #9b59b6;
+      box-shadow: 0 0 10px black;
+      transition: .3s;
+    }
+
+    .apply1:hover {
+      background-color: #000000;
+    }
+
+    .apply1 i {
+      color: #9b59b6;
+      font-size: 50px;
+      border: 8px solid #9b59b6;
+      padding: 7px 20px;
+      border-radius: 100px;
+    }
+
+    .mid_bar1 {
+      height: 40px;
+      width: 60px;
+      background-color: #9b59b6;
+      margin: -20px 0px 0px 100px;
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    .top_bar1 {
+      height: 20px;
+      width: 100px;
+      background-color: #8e44ad;
+      margin: -60px 0px 0px 80px;
+      border-radius: 20px 20px 0px 0px;
+    }
+
+    .apply2 {
+      height: 35vh;
+      width: 100%;
+      padding: 40px 0px 0px 0px;
+      color: #2980b9;
+      box-shadow: 0 0 10px black;
+      transition: .3s;
+    }
+
+    .apply2:hover {
+      background-color: #000000;
+    }
+
+    .apply2 i {
+      color: #2980b9;
+      font-size: 50px;
+      border: 8px solid #337ab7;
+      padding: 7px 20px;
+      border-radius: 100px;
+    }
+
+    .mid_bar2 {
+      height: 40px;
+      width: 60px;
+      background-color: #2980b9;
+      margin: -20px 0px 0px 100px;
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    .top_bar2 {
+      height: 20px;
+      width: 100px;
+      background-color: #337ab7;
+      margin: -60px 0px 0px 80px;
+      border-radius: 20px 20px 0px 0px;
+    }
+
+    .apply3 {
+      height: 35vh;
+      width: 100%;
+      padding: 40px 0px 0px 0px;
+      color: #e74c3c;
+      box-shadow: 0 0 10px black;
+      transition: .3s;
+    }
+
+    .apply3:hover {
+      background-color: #000000;
+    }
+
+    .apply3 i {
+      color: #e74c3c;
+      font-size: 50px;
+      border: 8px solid #e74c3c;
+      padding: 7px 20px;
+      border-radius: 100px;
+    }
+
+    .mid_bar3 {
+      height: 40px;
+      width: 60px;
+      background-color: #e74c3c;
+      margin: -20px 0px 0px 100px;
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    .top_bar3 {
+      height: 20px;
+      width: 100px;
+      background-color: #c0392b;
+      margin: -60px 0px 0px 80px;
+      border-radius: 20px 20px 0px 0px;
+    }
+
+    .marg {
+      margin-top: 4em;
+    }
+
+    .any_search {
+      height: auto;
+      width: 100%;
+      background: url(image/\,m\ nsdk\ nsd.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .any_search i {
+      color: #ffffff;
+      font-size: 50px;
+      border: 8px solid #ffffff;
+      padding: 10px 20px;
+      border-radius: 100px;
+      filter: drop-shadow(0 0 10px black);
+    }
+
+    .any_search h1 {
+      filter: drop-shadow(0 0 10px black);
+    }
+
+
+    .round_image img {
+      height: auto;
+      width: 100%;
+      border: 2px solid black;
+      border-radius: 100px;
+      transition: .3s;
+    }
+
+    .round_image img:hover {
+      transform: scale(1.15);
+    }
+  </style>
+</head>
+
+<body class="">
+  <div class="top bg-light">
+    <ul class=" text-center" style="list-style-type: none;">
+      <li>
+        <a class="raj animate-left" href="index.html"><img class="logo img-responsive img-fluid" src="image/SGU.png"
+            alt=""></a>
+      </li>
+      <div class="animate-right">
+        <p class="display-5 name">
+          SUNDER DEEP GLOBAL UNIVERSITY
+        </p>
+        <span class="add">
+          Engineering College  in Uttar Pradesh
+        </span>
+        <a href="signup.html" class="btn btn-primary float-end mx-2">Sign up</a>
+        <a href="signin.html" class="btn btn-success float-end ">Sign In</a>
+      </div>
+    </ul>
+  </div>
+  <div class=" sticky-top bg-light shadow-lg">
+    <ul class="navbaar">
+      <li class=" animate-right"><a class="nav" href="#gallary">GALLARY</a></li>
+      <li class=" animate-top"><a class="nav" href="#services">SERVICES</a></li>
+      <li class=" animate-bottom"><a class="nav" href="#courses">COURSES</a></li>
+      <li class=" animate-top"><a class="nav" href="#review">ABOUT US</a></li>
+      <li class=" animate-left"><a class="nav" href="#">HOME</a></li>
+    </ul>
+  </div>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/Slider_1_25052021165140.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/Slider_1_25052021113452.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/Slider_1_25052021165121.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/Slider_1_27112020104744.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <hr>
+  <div class="container-fluid">
+    <div class="row p-2">
+      <div class="col-md-6 m-0 p-0">
+        <div class="card img-responsive">
+          <img class=" img-responsive img-fluid rounded" src="image/28_02_17_105914_ss2.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-6" id="review">
+        <div class="reveiw p-3">
+          <h1 class=" text-center">
+            Review of Collage
+          </h1>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima labore cumque excepturi similique impedit,
+            adipisci facilis quibusdam ducimus sapiente odio, unde alias itaque mollitia suscipit consequuntur culpa
+            fugit vitae quia quas nobis. Commodi pariatur
+            amet aperiam incidunt! Ipsum voluptatibus reprehenderit delectus. Magnam ipsa sint laborum ab quo minima eum
+            delectus iusto optio exercitationem, in incidunt harum modi deleniti repellat beatae accusantium culpa,
+            aperiam aspernatur
+            doloribus tempora itaque eos quod odit? Recusandae magnam perferendis cupiditate minima rerum nihil vel
+            veritatis ullam eius consequuntur ad ut non veniam adipisci sit est, porro dolorum accusamus corporis libero
+            deserunt? Ullam
+            saepe omnis ipsum. Eos earum quasi deleniti perferendis commodi ab voluptas culpa doloribus doloremque
+            quaerat. Voluptatum accusantium ab ipsum. Placeat repellat nobis molestiae. Voluptates, eos. Quasi possimus
+            necessitatibus,
+            accusantium doloribus quod corrupti temporibus deleniti sequi. Explicabo accusamus, expedita sint eos
+            facilis officiis aut a nostrum optio, quibusdam iusto delectus omnis animi repellat laudantium. Explicabo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr>
+    <div class="container">
+      <div class="row marg">
+        <div class="col-md-3">
+          <a href="#">
+            <div class="apply mb-4 text-center rounded">
+              <div class="top_bar"></div>
+              <div class="mid_bar"></div>
+              <i class="bi bi-file-text"></i>
+              <h3 class="mt-5">
+                Apply Online
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <div class="apply1 mb-4 text-center rounded">
+              <div class="top_bar1"></div>
+              <div class="mid_bar1"></div>
+              <i class="bi bi-zoom-in"></i>
+              <h3 class="mt-5">
+                FIND PROGRAM
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <div class="apply2 mb-4 text-center rounded">
+              <div class="top_bar2"></div>
+              <div class="mid_bar2"></div>
+              <i class="bi bi-bank2"></i>
+              <h3 class="mt-5">
+                COLLEGES
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <div class="apply3 mb-4 text-center rounded">
+              <div class="top_bar3"></div>
+              <div class="mid_bar3"></div>
+              <i class="bi bi-gem"></i>
+              <h3 class="mt-5">
+                SCHOLARSHIP
+              </h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="container" id="gallary">
+      <div class="row">
+        <h1 class="succ text-center text-light p-2 shadow rounded-3 mt-4">
+          MEDIA GALLARY & EVENTS
+        </h1>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6 mt-2">
+              <a href="#">
+                <div class="card media">
+                  <p class=" text-center display-6">
+                    Images
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 mt-2">
+              <a href="#">
+                <div class="card media">
+                  <p class=" text-center display-6">
+                    Videos
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path
+                      d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col md-6 mt-2">
+          <div class="scroll">
+            <marquee class="shadow-lg" height="290px" width="80%" behavior="" direction="up" onmouseover="this.stop()"
+              onmouseout="this.start()">
+              <ul class="">
+                <li>
+                  <a href="#">"National conference on Human Values being organised in STEP HBTI"</a>
+                </li>
+                <li>
+                  <a href="#">"Digital Transformation through Intelligent computing and methods", Lloyd Institute of
+                    Engineering & Technology : 30 Dec,2022</a>
+                </li>
+                <li>
+                  <a href="#">"Artificial Intelligence and Smart Communication (AISC-2023)" by GL Bajaj Institute of
+                    Technology and Management: January 27th - 29th, 2023</a>
+                </li>
+                <li>
+                  <a href="#">CHEMCON 2022 (Chemical Engineering Congress): December 27th - 30th, 2022 </a>
+                </li>
+                <li>
+                  <a href="#">Emerging Healthcare Technologies Conference- December 17, 2022</a>
+                </li>
+              </ul>
+            </marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <h1 class="succ text-center text-light p-2 shadow rounded-3 mt-4">
+          SUCCESS STORIES BY STUDENTS
+        </h1>
+        <div class="col-md-4">
+          <div class="place card animate-left" id="animate1">
+            <img class=" " src="image/Deep TyagiBBAStory.png" alt="Image Not Available">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="place card animate-bottom" id="animate2">
+            <img src="image/Rani Pal.png" alt="Image Not Available">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="place card animate-right" id="animate3">
+            <img src="image/Shreesh_SuccessStory.png" alt="Image Not Available">
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="container">
+        <h1 class="succ text-center text-light p-2 shadow rounded-3 mt-4">
+          AUR STUDENTS AND FACULTY
+        </h1>
+        <div class="row my-5 text-center">
+          <div class="col">
+            <div class="round_image">
+              <img class="img-fluid" src="image/AnjumAra.jpg" alt="">
+              <h5 class=" my-2 text-danger">
+                ANJUM ARA
+              </h5>
+              <p class="">
+                IPS BATCH OF 2011
+                <br> (ALL INDIA RANK-408)
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="round_image">
+              <img class="img-fluid" src="image/Kriti_Jaiswal.jpg" alt="">
+              <h5 class=" my-2 text-danger">
+                KRITIKA JAISWAL
+              </h5>
+              <p class="">
+                IAS BATCH OF 2014 <br> (ALL INDIA RANK-778)
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="round_image">
+              <img class="img-fluid" src="image/MohdMohsinKhan.jpg" alt="">
+              <h5 class=" my-2 text-danger">
+                MOHD. MOHSIN KHAN
+              </h5>
+              <p class="">
+                DEPUTY SUPERINTENDENT <br> POLICE AT U.P.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="round_image">
+              <img class="img-fluid" src="image/MS_NOORINKHAN.jpg" alt="">
+              <h5 class=" my-2 text-danger">
+                NOORIN KHAN BUX
+              </h5>
+              <p class="">
+                IES BATCH OF 2009 <br> (ALL INDIA RANK-36)
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="round_image">
+              <img class="img-fluid" src="image/Renuka_Tripathi.bmp" alt="">
+              <h5 class=" my-2 text-danger">
+                RENUKA TRIPATHI
+              </h5>
+              <p class="">
+                IRPS OFFICER <br> (MIN. OF RAILWAY)
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="round_image">
+              <img class="img-fluid" src="image/SayedAliAbbas.jpeg" alt="">
+              <h5 class=" my-2 text-danger">
+                SAYED ALI ABBAS
+              </h5>
+              <p class="">
+                UPSC BATCH OF 2017 <br> (ALL INDIA RANK-137)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="alumni_btn text-center mb-2">
+          <a class="btn btn-outline-primary" href="#">SEE MORE ALUMNI</a>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row" id="courses">
+        <h1 class="succ text-center text-light p-2 shadow rounded-3 mt-4">
+          Sunder Deep Group of Institutions
+        </h1>
+        <div class="col-md-6">
+          <div class="place1 card">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="image/SDEC_Op.jpg" alt="Image Not Available">
+              </div>
+              <div class="col-md-7 text-center">
+                <a class="right_in " href="#">
+                  Sunder Deep Engineering College Engineering
+                </a>
+                <p>
+                  BTech, MCA, MBA, M.Tech (AKTU CODE-240)
+                </p>
+                <a class="btn btn-primary know_more w-50 m-2" href="#">Know More <i class="bi bi-caret-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="place1 card">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="image/SDPC_Op.jpg" alt="Image Not Available">
+              </div>
+              <div class="col-md-7 text-center">
+                <a class="right_in " href="#">
+                  Sunder Deep Pharmacy College
+                </a>
+                <p>
+                  D.Pharma, B.Pharma, M.Pharma (AKTU Code-259, BTE Code-1061)
+                </p>
+                <a class="btn btn-primary know_more w-50 m-2" href="#">Know More <i class="bi bi-caret-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="place1 card ">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="image/28_02_17_105914_ss2.jpg" alt="Image Not Available">
+              </div>
+              <div class="col-md-7 text-center">
+                <a class="right_in " href="#">
+                  Sunder Deep College Of Architecture
+                </a>
+                <p>
+                  B.Arch, M.Arch, M.U.R.P. (AKTU CODE-327,COA CODE-UP-08)
+                </p>
+                <a class="btn btn-primary know_more w-50 m-2" href="#">Know More <i class="bi bi-caret-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="place1 card">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="image/images (1).jpg" alt="Image Not Available">
+              </div>
+              <div class="col-md-7 text-center">
+                <a class="right_in " href="#">
+
+                  Sunder Deep College of Management & Technology
+                </a>
+                <p>
+                  BBA,BCA, B.Ed, B. Com (CCSU CODE-302)
+                </p>
+                <a class="btn btn-primary know_more w-50 m-2" href="#">Know More <i class="bi bi-caret-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="place1 card ">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="image/Campus view of Sunder deep college of Architecture_Campus  view.jpg"
+                  alt="Image Not Available">
+              </div>
+              <div class="col-md-7 text-center">
+                <a class="right_in " href="#">
+
+                  Sunder Deep College of Hotel Management
+                </a>
+                <p>
+                  B.Sc. HHA, BHMCT, Dip. HM (affiliated to AKTU , NCHMCT) AKTU code - 326, NCHM code 318.
+                </p>
+                <a class="btn btn-primary know_more w-50 m-2" href="#">Know More <i class="bi bi-caret-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="place1 card">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="image/1495429330phpEnMY5X.jpeg" alt="Image Not Available">
+              </div>
+              <div class="col-md-7 text-center">
+                <a class="right_in " href="#">
+                  Suresh Deep Polytechnic
+                </a>
+                <p>
+                  Diploma Courses Offered (BTE CODE-1621)
+                </p>
+                <a class="btn btn-primary know_more w-50 m-2" href="#">Know More <i class="bi bi-caret-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="place1 card ">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="image/,m nsdk nsd.jpg" alt="Image Not Available">
+              </div>
+              <div class="col-md-7 text-center">
+                <a class="right_in " href="#">
+                  Sunder Deep College of Hotel Management
+                </a>
+                <p>
+                  B.Sc. HHA, BHMCT, Dip. HM (affiliated to AKTU , NCHMCT) AKTU code - 326, NCHM code 318.
+                </p>
+                <a class="btn btn-primary know_more w-50 m-2" href="#">Know More <i class="bi bi-caret-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="any_search text-light text-center py-5 mt-3 rounded">
+        <i class="bi bi-search display-4"></i>
+        <h1 class="my-5">
+          Are you Searching
+          For a First-Class Consultant?
+        </h1>
+        <a href="#" class="btn btn-warning shadow-lg">MORE ABOUT US</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-2">
+        <h1 class="succ text-center text-light p-2 shadow rounded-3">
+          Our Recruiters & Job Opportunities
+        </h1>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image1.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image2.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image3.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image4.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image5.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image6.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image7.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image8.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image9.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image10.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image11.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image12.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image13.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image14.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image15.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image16.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image17.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image18.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image19.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image20.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image21.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image22.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image23.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card oporch">
+            <img src="image/image24.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="oporch_btn text-center p-4">
+        <button class="btn btn-primary know_more">Veiw More >></button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1687477675189!6m8!1m7!1sCAoSLEFGMVFpcE9MZHpEaUVuUU1STXBQbTZSdTJna2ZQWGpyUURZOXM4b29UbW5P!2m2!1d28.68490781860426!2d77.53551483283763!3f72.20234652576512!4f15.995340408871257!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form">
+          <h1 class="text-center text-dark p-2 shadow rounded-3 text-uppercase mb-3 border border-dark">
+            Contact Us
+          </h1>
+          <form class="shadow-lg rounded px-5 py-2">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control shadow" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+              <label class="mt-2" for="email">Email</label>
+              <input type="email" class="form-control shadow" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+              <label class="mt-2" for="Mobile">Mobile</label>
+              <input type="number" class="form-control shadow" placeholder="Enter Your Mobile Number">
+            </div>
+            <div class="form-group">
+              <label class="mt-2" for="massage">Massage</label>
+              <textarea class="form-control shadow" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-primary w-50 mt-3 shadow-lg">Submit</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+<hr>
+    <div class="row" id="services">
+      <div class="foot bg-dark">
+        <div class="container">
+          <div class="row text-white">
+            <div class="col-md-3">
+              <div class="foot_cont">
+                <h5>
+                  SUNDERDEEP GROUP OF INSTITUTIONS
+                </h5>
+                <a href="#">Expert Views</a>
+                <a href="#">Circulars</a>
+                <a href="#">Press Release</a>
+                <a href="#">Placement</a>
+                <a href="#">Question Bank</a>
+                <a href="#">Achievements</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="foot_cont">
+                <h5>
+                  INFRASTRUCTURE
+                </h5>
+                <a href="#">Campus</a>
+                <a href="#">Classes & Labs</a>
+                <a href="#">Library</a>
+                <a href="#">Sports & Fitness</a>
+                <a href="#">Concern for Society (CFS)</a>
+                <a href="#">Medical Facilities</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="foot_cont">
+                <h5>
+                  INSTITUTIONS
+                </h5>
+                <a href="#">Sunder Deep Engineering College</a>
+                <a href="#">Sunder Deep Pharmacy College</a>
+                <a href="#">Sunder Deep College of Management & Technology</a>
+                <a href="#">Sunder Deep College of Hotel Management</a>
+                <a href="#">Sunder Deep College Of Architecture</a>
+                <a href="#">Suresh Deep Polytechnic</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="foot_cont">
+                <h5>
+                  CONTACT
+                </h5>
+                <a href="#">Get Direction</a>
+                <a href="#">Address & Phone Numbers</a>
+                <a href="#">Email Address</a>
+                <a href="#">POST YOUR QUERY</a>
+                <h5 class=" mt-3">
+                  SUBSCRIBE NEWSLETTER
+                </h5>
+                <input type="text" class=" form-control" placeholder="Enter Your Email">
+                <button class="btn btn-primary know_more mt-2">SIGN UP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oner text-center">
+          <span class=" text-light">Design & Developed By <a class=" text-info dev"
+              href="https://github.com/rajkumardevl" target="_blank">Raj Developer</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ico">
+    <a class=" bg-success red_up" href="#"><i class="bi bi-whatsapp" data-bs-toggle="tooltip"
+        title="Whatsapp"></i></a><br>
+    <a class=" bg-primary" href="#"><i class="bi bi-facebook" data-bs-toggle="tooltip" title="Facebook"></i></a><br>
+    <a class=" bg-danger" href="#"><i class="bi bi-instagram" data-bs-toggle="tooltip" title="Instagram"></i></a><br>
+    <a class=" bg-info red_down" href="#" data-bs-toggle="tooltip" title="Twitter"><i class="bi bi-twitter"></i></a>
+  </div>
+</body>
+
+</html>
